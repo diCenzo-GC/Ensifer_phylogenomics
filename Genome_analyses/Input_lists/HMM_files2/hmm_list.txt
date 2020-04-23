@@ -1,0 +1,8 @@
+NodA
+NodB
+NodC
+NifH
+NifD
+NifK
+RepA
+RepB

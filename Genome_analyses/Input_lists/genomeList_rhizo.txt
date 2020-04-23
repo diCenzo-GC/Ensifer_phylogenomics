@@ -1,0 +1,6 @@
+Rhizobium_etli_8C_3	ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/908/375/GCF_001908375.1_ASM190837v1
+Rhizobium_etli_CFN_42	ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/092/045/GCF_000092045.1_ASM9204v1
+Rhizobium_etli_CIAT_652	ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/020/265/GCF_000020265.1_ASM2026v1
+Rhizobium_etli_IE4803	ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/816/125/GCF_000816125.1_ASM81612v1
+Rhizobium_etli_Mim1	ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/442/435/GCF_000442435.1_ASM44243v1
+Rhizobium_etli_NXC12	ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/119/845/GCF_002119845.1_ASM211984v1

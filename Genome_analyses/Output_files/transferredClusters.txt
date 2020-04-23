@@ -1,0 +1,3 @@
+16 Horizontal_transfer/clusters_99_100aa.txt
+58 Horizontal_transfer/clusters_98_100aa.txt
+204 Horizontal_transfer/clusters_95_100aa.txt
