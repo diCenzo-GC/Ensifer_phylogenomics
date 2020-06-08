@@ -92,14 +92,12 @@ perl Scripts/combineAlignments_Rep.pl > Sym_Gene_Phylogenies/Alignments/Rep_prot
 
 # Make the phylogenies
 cd Sym_Gene_Phylogenies/Phylogenies/ # Change directory
-mpiexec -bynode -np 10 raxmlHPC-HYBRID-SSE3 -T 2 -s ../Alignments/Nod_protein_alignment.fasta -N autoMRE -n NodABC_Phylogeny -f a -p 12345 -x 12345 -m PROTGAMMALG # Run raxml
-mpiexec -bynode -np 10 raxmlHPC-HYBRID-SSE3 -T 2 -s ../Alignments/Nif_protein_alignment.fasta -N autoMRE -n NifHDK_Phylogeny -f a -p 12345 -x 12345 -m PROTGAMMALG # Run raxml
-mpiexec -bynode -np 10 raxmlHPC-HYBRID-SSE3 -T 2 -s ../Alignments/Rep_protein_alignment.fasta -N autoMRE -n RepAB_Phylogeny -f a -p 12345 -x 12345 -m PROTGAMMALG # Run raxml
+mpiexec -bynode -np 16 raxmlHPC-HYBRID-SSE3 -T 2 -s ../Alignments/Nod_protein_alignment.fasta -N autoMRE -n NodABC_Phylogeny -f a -p 12345 -x 12345 -m PROTGAMMAJTT # Run raxml
+mpiexec -bynode -np 16 raxmlHPC-HYBRID-SSE3 -T 2 -s ../Alignments/Nif_protein_alignment.fasta -N autoMRE -n NifHDK_Phylogeny -f a -p 12345 -x 12345 -m PROTGAMMAJTT # Run raxml
+mpiexec -bynode -np 8 raxmlHPC-HYBRID-SSE3 -T 4 -s ../Alignments/Rep_protein_alignment.fasta -N autoMRE -n RepAB_Phylogeny -f a -p 12345 -x 12345 -m PROTGAMMALG # Run raxml
 cd ../../ # Change directory
 
 # Move output files
 cp Sym_Gene_Phylogenies/Phylogenies/RAxML_bipartitions.NodABC_Phylogeny Output_files/nodPhylogeny.tre # Move file
 cp Sym_Gene_Phylogenies/Phylogenies/RAxML_bipartitions.NifHDK_Phylogeny Output_files/nifPhylogeny.tre # Move file
 cp Sym_Gene_Phylogenies/Phylogenies/RAxML_bipartitions.RepAB_Phylogeny Output_files/repPhylogeny.tre # Move file
-
-
