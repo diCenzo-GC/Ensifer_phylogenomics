@@ -36,6 +36,6 @@ perl Scripts/combineAlignments.pl > Rooted_phylogeny/MLSA_phylogeny/Phylogeny/ML
 
 # Prepare phylogeny
 cd Rooted_phylogeny/MLSA_phylogeny/Phylogeny/ # Change directory
-mpiexec -bynode -np 5 raxmlHPC-HYBRID-SSE3 -T 4 -s MLSA_final_alignment.fasta -N autoMRE -n Rooted_Phylogeny -f a -p 12345 -x 12345 -m PROTGAMMALG # Run raxml
+mpiexec -bynode -np 8 raxmlHPC-HYBRID-SSE3 -T 4 -s MLSA_final_alignment.fasta -N autoMRE -n Rooted_Phylogeny -f a -p 12345 -x 12345 -m PROTGAMMAJTTDCMUT # Run raxml
 cd ../../ # Change directory
 cp /datadisk1/georged/Projects/Sinorhizobium_Ensifer/Rooted_phylogeny/MLSA_phylogeny/Phylogeny/RAxML_bipartitions.Rooted_Phylogeny Output_files/rootedPhylogeny.tre # Move the file
